@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let'sExplore | Travel Agency</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                evtend: {
+                    colors: {
+                        primary: '#1E88E5',
+                        secondary: '#1565C0',
+                        accent: '#29B6F6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="sticky top-0 w-full bg-white/80 backdrop-blur-lg shadow-md z-50">
+        <div class="flex justify-between px-6 py-4 items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="logo" class="h-10 w-10">
+        <span class="text-2xl font-bold text-blue-600">Let'sExplore</span>
+      </a>
+            <nav>
+                <ul class="hidden md:flex text-gray-700 font-medium space-x-8 ">
+                    <li class="hover:text-blue-500 transition-colors"><a href="index.html">Home</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="destinations.html">Destinations</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="packages.html">Packages</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="about.html">About</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="menuBtn" class="md:hidden text-blue-500 focus:ring-2 Focus:ring-blue-500 px-1 text-xl">☰</button>
+            </nav>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden">
+                <ul class="flex  flex-col text-center text-gray-700 font-medium space-y-2 pb-2">
+                    <li class="hover:text-blue-500 transition-colors"><a href="index.html">Home</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="destinations.html">Destinations</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="packages.html">Packages</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="about.html">About</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="contact.html">Contact</a></li>
+                </ul>
+        </div>
+    </header>
+
+    <section class="bg-[url(images/packages.webp)] bg-cover">
+        <div class="text-center p-25 bg-black/30 space-y-4">
+            <h1 class="text-6xl font-bold text-white">Our Exclusive Tour Packages</h1>
+            <p class="text-white font-semibold">Choose your dream experience — crafted for comfort, adventure, and unforgettable memories.</p>
+        </div>
+    </section>
+
+    <section class="my-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl text-blue-600 font-bold mb-10 text-center">Top-Rated Travel Packages</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="rounded-lg shadow-md m-2 hover:scale-[1.02] transition duration-300">
+                    <img src="images/bali.jpg" alt="Bali" class="rounded-t-lg">
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-blue-600 font-semibold text-2xl">Bali, Indonesia</h4>
+                        <p class="text-gray-700">Experience the magic of Bali’s beaches, temples, and tropical serenity.</p>
+                        <div class="flex flex-col">
+                            <div>
+                            <i class="fa-solid fa-clock text-blue-600"></i>
+                            <span class="text-gray-700"> 6 Days / 5 Nights</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-hotel text-blue-600"></i>
+                            <span class="text-gray-700">4-Star Beach Resort</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-bus text-blue-600"></i>
+                            <span class="text-gray-700"> Airport Transfers Included</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-blue-600">$999</span>
+                            <button id="baliBtn" onclick="booked(id)" class="bg-blue-600 p-2 rounded-lg text-white hover:bg-white hover:text-blue-600 hover:ring-2 hover:ring-blue-600">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg shadow-md m-2 hover:scale-[1.02] transition duration-300">
+                    <img src="images/spane.jpg" alt="Bali" class="rounded-t-lg w-full h-48">
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-blue-600 font-semibold text-2xl">Barcelona, Spain</h4>
+                        <p class="text-gray-700">Explore Gaudí’s masterpieces and enjoy the vibrant streets of Barcelona.</p>
+                        <div class="flex flex-col">
+                            <div>
+                            <i class="fa-solid fa-clock text-blue-600"></i>
+                            <span class="text-gray-700">7 Days / 6 Nights</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-hotel text-blue-600"></i>
+                            <span class="text-gray-700"> City Center Hotel</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-utensils text-blue-600"></i>
+                            <span class="text-gray-700">Breakfast & Dinner Included</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-blue-600">$1200</span>
+                            <button id="spaneBtn" onclick="booked(id)" class="bg-blue-600 p-2 rounded-lg text-white hover:bg-white hover:text-blue-600 hover:ring-2 hover:ring-blue-600">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg shadow-md m-2 hover:scale-[1.02] transition duration-300">
+                    <img src="images/egypt.avif" alt="Bali" class="rounded-t-lg">
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-blue-600 font-semibold text-2xl">Cairo, Egypt</h4>
+                        <p class="text-gray-700">Uncover the mysteries of ancient Egypt and visit the Great Pyramids of Giza.</p>
+                        <div class="flex flex-col">
+                            <div>
+                            <i class="fa-solid fa-clock text-blue-600"></i>
+                            <span class="text-gray-700">5 Days / 4 Nights</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-hotel text-blue-600"></i>
+                            <span class="text-gray-700"> Nile River Cruise Stay</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-building-columns text-blue-600"></i>
+                            <span class="text-gray-700"> Guided Museum Tours</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-blue-600">$1050</span>
+                            <button id="egyptBtn" onclick="booked(id)" class="bg-blue-600 p-2 rounded-lg text-white hover:bg-white hover:text-blue-600 hover:ring-2 hover:ring-blue-600">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg shadow-md m-2 hover:scale-[1.02] transition duration-300">
+                    <img src="images/Swiss.jpg" alt="swiss" class="rounded-t-lg">
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-blue-600 font-semibold text-2xl">Swiss Alps Adventure</h4>
+                        <p class="text-gray-700">Enjoy breathtaking mountain views, snow resorts, and serene lakes.</p>
+                        <div class="flex flex-col">
+                            <div>
+                            <i class="fa-solid fa-clock text-blue-600"></i>
+                            <span class="text-gray-700">8 Days / 7 Nights</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-mountain-sun text-blue-600"></i>
+                            <span class="text-gray-700"> Mountain Chalet Stay</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-person-skiing text-blue-600"></i>
+                            <span class="text-gray-700">Skiing & Cable Car Pass</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-blue-600">$1800</span>
+                            <button id="swissBtn" onclick="booked(id)" class="bg-blue-600 p-2 rounded-lg text-white hover:bg-white hover:text-blue-600 hover:ring-2 hover:ring-blue-600">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg shadow-md m-2 hover:scale-[1.02] transition duration-300">
+                    <img src="images/rome.jpeg" alt="rome" class="rounded-t-lg w-full h-auto">
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-blue-600 font-semibold text-2xl">Rome, Italy</h4>
+                        <p class="text-gray-700">Step back in time exploring ancient Roman ruins and stunning architecture.</p>
+                        <div class="flex flex-col">
+                            <div>
+                            <i class="fa-solid fa-clock text-blue-600"></i>
+                            <span class="text-gray-700"> 6 Days / 5 Nights</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-hotel text-blue-600"></i>
+                            <span class="text-gray-700">4-Star City Hotel</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-building-columns text-blue-600"></i>
+                            <span class="text-gray-700">Colosseum Guided Tour</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-blue-600">$1150</span>
+                            <button id="romeBtn" onclick="booked(id)" class="bg-blue-600 p-2 rounded-lg text-white hover:bg-white hover:text-blue-600 hover:ring-2 hover:ring-blue-600">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-lg shadow-md m-2 hover:scale-[1.02] transition duration-300">
+                    <img src="images/france.jpeg" alt="France" class="rounded-t-lg w-full h-48">
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-blue-600 font-semibold text-2xl">Paris, France</h4>
+                        <p class="text-gray-700">Discover the romance of Paris — Eiffel Tower, Seine River, and fine dining.</p>
+                        <div class="flex flex-col">
+                            <div>
+                            <i class="fa-solid fa-clock text-blue-600"></i>
+                            <span class="text-gray-700"> 5 Days / 4 Nights</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-hotel text-blue-600"></i>
+                            <span class="text-gray-700"> Boutique Hotel Stay</span>
+                            </div>
+                            <div>
+                            <i class="fa-solid fa-utensils text-blue-600"></i>
+                            <span class="text-gray-700"> French Cuisine Experience</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-semibold text-blue-600">$1300</span>
+                            <button id="franceBtn" onclick="booked(id)" class="bg-blue-600 p-2 rounded-lg text-white hover:bg-white hover:text-blue-600 hover:ring-2 hover:ring-blue-600">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="space-y-2 pb-6 sm:m-6">
+                    <h4 class="text-white text-2xl font-bold">Let'sExplore</h4>
+                    <p class="text-gray-300">Your trusted travel partner for unforgettable adventures around the world.</p>
+                </div>
+                <div class="space-y-2 pb-6 sm:m-6 ">
+                    <h4 class="text-white font-semibold text-xl">Quick Links</h4>
+                    <div class="flex flex-col space-y-2 text-gray-300">
+                    <a href="index.html" class="hover:text-white">Home</a>
+                    <a href="destinations.html" class="hover:text-white">Destination</a>
+                    <a href="packages.html" class="hover:text-white">Packages</a>
+                    <a href="about.html" class="hover:text-white">About</a>
+                    </div>
+                </div>
+                <div class="space-y-2 pb-6 sm:m-6">
+                    <h4 class="text-white font-semibold text-xl">Contact</h4>
+                    <div class="text-gray-300">
+                        <p>Email: info@letsexplore.com</p>
+                        <p>Phone: +880 1234 567 890</p>
+                    </div>
+                </div>
+                <div class="py-b sm:m-6">
+                  <h4 class="text-white text-xl font-semibold pb-2">Follow Us</h4>
+                 <div class="space-x-4 text-xl">
+                   <a href="#"><i class="fa-brands fa-facebook text-blue-400"></i></a>
+                   <a href="#"><i class="fa-brands fa-instagram text-pink-500"></i></a>
+                   <a href="#"><i class="fa-brands fa-twitter text-sky-400"></i></a>
+                 </div>
+                </div>
+            </div>    
+        </div>
+        <div class="text-center text-gray-300 border-t-2 py-5">
+        © 2025 Let'sExplore. Made By Aronno Chowdhury.
+        </div>
+
+    </footer>
+
+
+    <script src="travel.js"></script>
+    </body>
+    </html>

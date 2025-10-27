@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let'sExplore | Travel Agency</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                evtend: {
+                    colors: {
+                        primary: '#1E88E5',
+                        secondary: '#1565C0',
+                        accent: '#29B6F6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="sticky top-0 w-full bg-white/80 backdrop-blur-lg shadow-md z-50">
+        <div class="flex justify-between px-6 py-4 items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="logo" class="h-10 w-10">
+        <span class="text-2xl font-bold text-blue-600">Let'sExplore</span>
+      </a>
+            <nav>
+                <ul class="hidden md:flex text-gray-700 font-medium space-x-8 ">
+                    <li class="hover:text-blue-500 transition-colors"><a href="index.html">Home</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="destinations.html">Destinations</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="packages.html">Packages</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="about.html">About</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="menuBtn" class="md:hidden text-blue-500 focus:ring-2 Focus:ring-blue-500 px-1 text-xl">☰</button>
+            </nav>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden">
+                <ul class="flex  flex-col text-center text-gray-700 font-medium space-y-2 pb-2">
+                    <li class="hover:text-blue-500 transition-colors"><a href="index.html">Home</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="destinations.html">Destinations</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="packages.html">Packages</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="about.html">About</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="contact.html">Contact</a></li>
+                </ul>
+        </div>
+    </header>
+
+    <section class="bg-[url(images/about.webp)]">
+        <div class="text-center text-white p-30 bg-black/30 space-y-4">
+            <h1 class="text-6xl font-bold">About Us</h1>
+            <p class="font-semibold">Discover who we are and what makes Let'sExplore the leading name in travel experiences worldwide.</p>
+        </div>
+    </section>
+
+    <section class="my-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="m-4">
+                    <img src="images/story.png" alt="story" class="rounded-lg shadow-lg hover:shadow-xl">
+                </div>
+                <div class="space-y-4 shadow-lg p-6 rounded-lg hover:shadow-xl m-4">
+                    <h2 class="text-3xl font-bold text-blue-600">Our Story</h2>
+                    <p class="text-gray-700">Founded in 2010, Let'sExplore started as a small group of passionate travelers who wanted to share the joy of exploring the world with others. Over the years, we’ve grown into one of the most trusted travel agencies, helping thousands create unforgettable experiences across more than 60 countries.
+                        <br><br>Our mission is simple — to make travel easy, enjoyable, and enriching for everyone. Whether you dream of climbing the Alps, relaxing on Maldives beaches, or exploring ancient temples, we’ve got your journey covered.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-20 bg-blue-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols1 md:grid-cols-2">
+                <div class="bg-white m-4 p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-[1.02] transition duration-300">
+                    <i class="fa-solid fa-bullseye text-4xl text-blue-600"></i>
+                    <h2 class="text-2xl font-semibold text-blue-600">Our Mission</h2>
+                    <p class="text-gray-700">To deliver exceptional travel experiences that connect people to cultures, landscapes, and adventures around the globe — responsibly and seamlessly.</p>
+                </div>
+                <div class="bg-white m-4 p-6 rounded-lg shadow-md hover:shadow-xl hover:scale-[1.02] transition duration-300">
+                    <i class="fa-solid fa-eye text-4xl text-blue-600"></i>
+                    <h2 class="text-2xl font-semibold text-blue-600">Our Vision</h2>
+                    <p class="text-gray-700">To inspire and empower travelers to explore the world with curiosity, confidence, and care for the planet and its people.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="pb-10 text-blue-600 text-3xl font-bold text-center">Why Choose Let'sExplore?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="text-center shadow-md p-6 bg-blue-100 space-y-2 rounded-lg m-4 hover:scale-[1.02]">
+                    <i class="fa-solid fa-globe text-4xl text-blue-600"></i>
+                    <h2 class="text-2xl font-semibold text-blue-600">Worldwide Coverage</h2>
+                    <p class="text-gray-700">We offer packages to over 100+ destinations, ensuring you’ll find your perfect getaway anywhere on Earth.</p>
+                </div>
+                <div class="text-center shadow-md p-6 bg-blue-100 space-y-2 rounded-lg m-4 hover:scale-[1.02]">
+                    <i class="fa-solid fa-phone-volume text-4xl text-blue-600"></i>
+                    <h2 class="text-2xl font-semibold text-blue-600">24/7 Support</h2>
+                    <p class="text-gray-700">Our expert travel advisors are available around the clock to assist you with planning and support.</p>
+                </div>
+                <div class="text-center shadow-md p-6 bg-blue-100 space-y-2 rounded-lg m-4 hover:scale-[1.02]">
+                    <i class="fa-solid fa-money-check-dollar text-4xl text-blue-600"></i>
+                    <h2 class="text-2xl font-semibold text-blue-600">Best Price Guarantee</h2>
+                    <p class="text-gray-700">We offer affordable pricing without compromising on quality, value, or experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-20 pb-20 bg-blue-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl text-blue-600 font-bold py-10 text-center">Meet Our Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3">
+            <article id="AC" class="flex flex-col items-center text-center shadow-md bg-white p-6 m-4 rounded-lg hover:ring-2 hover:ring-blue-600 hover:scale-[1.02] transition duration-300">
+              <figure>
+                <img src="images/Aronno Office.PNG" alt="Portrait of Aronno Chowdhury" class="h-40 w-40 rounded-full object-cover shadow-md hover:ring-2 hover:ring-blue-600">
+              </figure>
+              <h4 class="mt-4 text-xl font-semibold text-blue-700">Aronno Chowdhury</h4>
+              <p class="text-blue-600">Founder & CEO</p>
+              <p id="aronno" class="hidden mt-2 text-gray-700 italic text-sm">Aronno Chowdhury is the founder and CEO of a Bangladesh-based travel agency, Let'sExplore. He is a visionary entrepreneur who aims to promote Bangladesh as a prime travel destination, offering unique and immersive travel experiences for both domestic and international tourists.</p>
+            </article>
+            <article id="rm" class="flex flex-col items-center text-center shadow-md bg-white p-6 m-4 rounded-lg hover:ring-2 hover:ring-blue-600 hover:scale-[1.02] transition duration-300">
+              <figure>
+                <img src="images/rahman.jpg" alt="Portrait of Aronno Chowdhury" class="h-40 w-40 rounded-full object-cover shadow-md hover:ring-2 hover:ring-blue-600">
+              </figure>
+              <h4 class="mt-4 text-xl font-semibold text-blue-700">FD Rahman</h4>
+              <p class="text-blue-600">Head of Operations</p>
+              <p id="rahman" class="hidden mt-2 text-gray-700 italic text-sm">Ensuring seamless travel planning and unforgettable journeys worldwide.</p>
+            </article>
+            <article id="su" class="flex flex-col items-center text-center shadow-md bg-white p-6 m-4 rounded-lg hover:ring-2 hover:ring-blue-600 hover:scale-[1.02] transition duration-300">
+              <figure>
+                <img src="images/suchi.jpeg" alt="Portrait of Aronno Chowdhury" class="h-40 w-40 rounded-full object-cover shadow-md hover:ring-2 hover:ring-blue-600">
+              </figure>
+              <h4 class="mt-4 text-xl font-semibold text-blue-700">Suchi Akter</h4>
+              <p class="text-blue-600">Marketing Director</p>
+              <p id="suchi" class="hidden mt-2 text-gray-700 italic text-sm">Dedicated to bringing the beauty of the world to every traveler’s attention.</p>
+            </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 pt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="space-y-2 m-5">
+                <h4 class="text-2xl font-bold text-white">Let'sExplore</h4>
+                <p class="text-gray-300">Your trusted travel partner for unforgettable adventures around the world.</p>
+            </div>
+            <div class="m-5">
+                <h4 class="text-white pb-2 font-semibold">Quick Links</h4>
+                <div class="text-gray-300 space-y-2 flex flex-col">
+                <a href="index.html" class="hover:text-white">Home</a>
+                <a href="destinations.html" class="hover:text-white">Destination</a>
+                <a href="packages.html" class="hover:text-white">Packages</a>
+                <a href="about.html" class="hover:text-white">About</a>
+                </div>
+            </div>
+            <div class="m-5">
+                <h4 class="text-white font-semibold pb-2">Contact</h4>
+                <p class="text-gray-300">Email: info@let'sexplore.com</p>
+                <p class="text-gray-300">Phone: +880 1234 567 890</p>
+            </div>
+            <div class="m-5">
+                <h4 class="text-white font-semibold pb-2">Follow Us</h4>
+                <div class="space-x-4 text-xl">
+                    <a href=""><i class="fa-solid fa-globe text-blue-300"></i></a>
+                    <a href=""><i class="fa-solid fa-book text-blue-300"></i></a>
+                    <a href=""><i class="fa-solid fa-camera-retro text-pink-500"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="text-center text-gray-300 border-t-2 py-5">© 2025 ExploreWorld. Made By Aronno Chowdhury.</div>
+    </footer>
+
+
+    <script src="travel.js"></script>
+    </body>
+    </html>

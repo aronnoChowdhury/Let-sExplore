@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let'sExplore | Travel Agency</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                evtend: {
+                    colors: {
+                        primary: '#1E88E5',
+                        secondary: '#1565C0',
+                        accent: '#29B6F6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="sticky top-0 w-full bg-white/80 backdrop-blur-lg shadow-md z-50">
+        <div class="flex justify-between px-6 py-4 items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="logo" class="h-10 w-10">
+        <span class="text-2xl font-bold text-blue-600">Let'sExplore</span>
+      </a>
+            <nav>
+                <ul class="hidden md:flex text-gray-700 font-medium space-x-8 ">
+                    <li class="hover:text-blue-500 transition-colors"><a href="index.html">Home</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="destinations.html">Destinations</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="packages.html">Packages</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="about.html">About</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="menuBtn" class="md:hidden text-blue-500 focus:ring-2 Focus:ring-blue-500 px-1 text-xl">☰</button>
+            </nav>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden">
+                <ul class="flex  flex-col text-center text-gray-700 font-medium space-y-2 pb-2">
+                    <li class="hover:text-blue-500 transition-colors"><a href="index.html">Home</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="destinations.html">Destinations</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="packages.html">Packages</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="about.html">About</a></li>
+                    <li class="hover:text-blue-500 transition-colors"><a href="contact.html">Contact</a></li>
+                </ul>
+        </div>
+    </header>
+
+    <section class="bg-[url(images/hero.jpg)] bg-cover">
+        <div class="bg-black/30 text-center text-white py-30 px-10 space-y-6">
+        <h1 class="text-6xl font-bold">Discover the World with us</h1>
+        <p class="text-xl">Your next adventure starts here — explore breathtaking destinations and unforgettable experiences crafted just for you.</p>
+        <button class="border-none bg-blue-600 p-3 rounded-lg hover:bg-blue-700 mt-8 hover:ring-2 hover:ring-white transition duration-300"><a href="packages.html">Explore Packages</a></button>
+        </div>
+    </section>
+
+    <section class="my-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-center text-3xl font-bold text-blue-600 mb-10">Popular Destinations</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="rounded-lg shadow-md m-2 hover:scale-[1.02] transition duration-300">
+                    <img src="images/bali.jpg" alt="bali" class="rounded-t-lg">
+                    <div class="p-4 space-y-2">
+                    <h4 class="text-2xl font-semibold">Beautiful Bali</h4>
+                    <p class="text-gray-700">Experience temples, beaches, and the rich culture of Indonesia’s top destination.</p>
+                    <button class="font-semibold hover:underline transition duration-200 hover:text-blue-700">View Packages →</button>
+                    </div>
+                </div>
+                <div class="rounded-lg shadow-md m-2 hover:scale-[1.02] transition duration-300">
+                    <img src="images/egypt.avif" alt="egypt" class="rounded-t-lg">
+                    <div class="p-4 space-y-2">
+                    <h4 class="text-2xl font-semibold">Egypt</h4>
+                    <p class="text-gray-700">Egypt's location is in the northeast of Africa, bordering the Mediterranean Sea to the north and the Red Sea to the east. </p>
+                    <button class="font-semibold hover:underline transition duration-200 hover:text-blue-700">View Packages →</button>
+                    </div>
+                </div>
+                <div class="rounded-lg shadow-md m-2 hover:scale-[1.02] transition duration-300">
+                    <img src="images/maldiv.jpg" alt="maldiv" class="rounded-t-lg">
+                    <div class="p-4 space-y-2">
+                    <h4 class="text-2xl font-semibold">Maldives Paradise</h4>
+                    <p class="text-gray-700">The Maldives is one of the flattest countries in the world, with most islands rising less than one meter above sea level. </p>
+                    <button class="font-semibold hover:underline transition duration-200 hover:text-blue-700">View Packages →</button>
+                    </div>
+                </div>
+                    <div class="rounded-lg shadow-md m-2 hover:scale-[1.02] transition duration-300">
+                    <img src="images/Swiss.jpg" alt="swiss" class="rounded-t-lg">
+                    <div class="p-4 space-y-2">
+                    <h4 class="text-2xl font-semibold">Swiss Alps Escape</h4>
+                    <p class="text-gray-700">Iconic spots include the Matterhorn, the Jungfraujoch railway, and the car-free village of Zermatt. </p>
+                    <button class="font-semibold hover:underline transition duration-200 hover:text-blue-700">View Packages →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-200 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-center pb-10">Why Choose Let'sExplore?</h1>
+            <div class="grid md:grid-cols-3">
+                <div class="flex flex-col items-center space-y-4 shadow-md rounded-lg p-8 bg-white m-2 hover:shadow-2xl transition duration-300">
+                    <img src="images/plane.jpg" alt="plane" class="w-16 h-16 rounded-full">
+                    <div class="text-center space-y-4">
+                        <h4 class="text-xl font-bold">Expert Guides</h4>
+                        <p class="text-gray-700">Our experienced local guides ensure a safe, fun, and culturally rich experience.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center space-y-4 shadow-md rounded-lg p-8 bg-white m-2 hover:shadow-2xl transition duration-300">
+                    <img src="images/location.jpg" alt="plane" class="w-20 h-16 rounded-full">
+                    <div class="text-center space-y-4">
+                        <h4 class="text-xl font-bold">Affordable Packages</h4>
+                        <p class="text-gray-700">We offer competitive rates without compromising quality and comfort.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center space-y-4 shadow-md rounded-lg p-8 bg-white m-2 hover:shadow-2xl transition duration-300">
+                    <img src="images/24-hour.jpg" alt="plane" class="w-20 h-16 rounded-full">
+                    <div class="text-center space-y-4">
+                        <h4 class="text-xl font-bold">24/7 Support</h4>
+                        <p class="text-gray-700">Our team is always available to assist you anytime, anywhere during your journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue-500 py-20">
+            <h2 class="text-3xl text-center pb-10 font-bold text-white">What Our Travelers Say</h2>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">    
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class="text-center shadow-md bg-white/10 p-8 rounded-xl text-blue-50 hover:shadow-2xl m-4">
+                <i>“The Maldives trip was perfectly organized! Hotels, guides, and tours exceeded expectations.”</i>
+                <p class="font-semibold pt-4">— Sarah Williams</p>
+            </div>
+            <div class="text-center shadow-md bg-white/10 p-8 rounded-xl text-blue-50 hover:shadow-2xl m-4">
+                <i>“I loved every moment in Switzerland. ExploreWorld made our honeymoon unforgettable!”</i>
+                <p class="font-semibold pt-4">— Jason & Emily</p>
+            </div>
+            <div class="text-center shadow-md bg-white/10 p-8 rounded-xl text-blue-50 hover:shadow-2xl m-4">
+                <i>“Their customer service and guidance were top-notch. Highly recommend!”</i>
+                <p class="font-semibold pt-4">— Ahmed Rahman</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="bg-blue-400 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4 text-white">
+            <h2 class="text-4xl font-bold">Ready to Start Your Journey?</h2>
+            <p>Explore the world personalized travel packages made just for you.</p>
+            <button class="bg-blue-600 p-4 rounded-2xl font-bold hover:bg-blue-700 hover:ring-2 hover:ring-white transition duration-300"><a href="contact.html">Contact Us Now</a></button>
+        </div>
+    </section>
+
+    <footer class="bg-blue-900 pt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="space-y-2 m-5">
+                <h4 class="text-2xl font-bold text-white">Let'sExplore</h4>
+                <p class="text-gray-300">Your trusted travel partner for unforgettable adventures around the world.</p>
+            </div>
+            <div class="m-5">
+                <h4 class="text-white pb-2 font-semibold">Quick Links</h4>
+                <div class="text-gray-300 space-y-2 flex flex-col">
+                <a href="index.html" class="hover:text-white">Home</a>
+                <a href="destinations.html" class="hover:text-white">Destination</a>
+                <a href="packages.html" class="hover:text-white">Packages</a>
+                <a href="about.html" class="hover:text-white">About</a>
+                </div>
+            </div>
+            <div class="m-5">
+                <h4 class="text-white font-semibold pb-2">Contact</h4>
+                <p class="text-gray-300">Email: info@let'sexplore.com</p>
+                <p class="text-gray-300">Phone: +880 1234 567 890</p>
+            </div>
+            <div class="m-5">
+                <h4 class="text-white font-semibold pb-2">Follow Us</h4>
+                <div class="space-x-4 text-xl">
+                    <a href=""><i class="fa-solid fa-globe text-blue-300"></i></a>
+                    <a href=""><i class="fa-solid fa-book text-blue-300"></i></a>
+                    <a href=""><i class="fa-solid fa-camera-retro text-pink-500"></i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="text-center text-gray-300 border-t-2 py-5">© 2025 ExploreWorld. Made By Aronno Chowdhury.</div>
+    </footer>
+
+    <script src="travel.js"></script>
+</body>  
+</html>
